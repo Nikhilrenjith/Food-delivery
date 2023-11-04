@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./header.css";
 import { Container } from "reactstrap";
 
@@ -26,6 +26,10 @@ const nav__links = [
 ];
 
 const Header = () => {
+  const menuRef = useRef();
+
+  const menuToggle = () => menuRef.current.classList.toggle("active-menu");
+
   return (
     <header className="header">
       <Container>
@@ -38,26 +42,37 @@ const Header = () => {
               PizZa Time
             </h2>
           </div>
-          <div className="nav-menu">
-            <ul className="nav-list">
-              {nav__links.map((item, index) => (
-                <li className="nav-item" key={index}>
-                  <a href={item.url}>{item.display}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="menu-right">
-            <div className="search">
-              <input type="text" placeholder="Search Item ..." />
-              <span>
-                <i class="ri-search-line"></i>
-              </span>
+          <div className="nav-menu" ref={menuRef}>
+            <div className="nav-list-wrapper d-flex align-items-center gap-5">
+              <ul className="nav-list">
+                {nav__links.map((item, index) => (
+                  <li className="nav-item" key={index}>
+                    <a href={item.url} onClick={menuToggle}>
+                      {item.display}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <div className="menu-right">
+                <div className="search">
+                  <input type="text" placeholder="Search Item ..." />
+                  <span>
+                    <i class="ri-search-line"></i>
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
+          <div>
+            <span className="cart-icon">
+              <i class="ri-shopping-cart-2-line"></i>
+
+              <span className="badge">2</span>
+            </span>
           </div>
           <div className="mobile-menu">
             <span>
-              <i class="ri-menu-2-fill"></i>
+              <i class="ri-menu-2-fill" onClick={menuToggle}></i>
             </span>
           </div>
         </div>
