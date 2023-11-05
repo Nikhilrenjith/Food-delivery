@@ -1,0 +1,33 @@
+.single-feature span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff766b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.single-feature span i {
+  font-size: 1.5rem;
+}
+.choose-content h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+.single-feature h6 {
+  color: #f5b70a;
+  margin-bottom: 0;
+}
+.single-feature p {
+  font-size: 0.7rem;
+}
+.feature-icon-two {
+  background: #2ace92 !important;
+}
+.feature-icon-three {
+  background: #f5b70a !important;
+}
+.feature-icon-four {
+  background: #7865ff !important;
+}
