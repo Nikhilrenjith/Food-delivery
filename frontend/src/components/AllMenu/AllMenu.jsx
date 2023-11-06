@@ -39,24 +39,41 @@ const AllMenu = () => {
           </Col>
           <Col lg="12" className="text-center mb-5">
             <button
-              className="filter-btn"
+              className={`filter-btn ${
+                filter === "Fast-food" ? "active-btn" : ""
+              }`}
               onClick={() => setFilter("Fast-food")}
             >
               Fast Food
             </button>
             <button
-              className="filter-btn active-btn "
+              className={`filter-btn ${
+                filter === "Rice-menu" ? "active-btn" : ""
+              }`}
               onClick={() => setFilter("Rice-menu")}
             >
               Rice Menu
             </button>
-            <button className="filter-btn" onClick={() => setFilter("Pizza")}>
+            <button
+              className={`filter-btn ${filter === "Pizza" ? "active-btn" : ""}`}
+              onClick={() => setFilter("Pizza")}
+            >
               Pizza
             </button>
-            <button className="filter-btn" onClick={() => setFilter("Dessert")}>
+            <button
+              className={`filter-btn ${
+                filter === "Dessert" ? "active-btn" : ""
+              }`}
+              onClick={() => setFilter("Dessert")}
+            >
               Desserts
             </button>
-            <button className="filter-btn" onClick={() => setFilter("Coffee")}>
+            <button
+              className={`filter-btn ${
+                filter === "Coffee" ? "active-btn" : ""
+              }`}
+              onClick={() => setFilter("Coffee")}
+            >
               Coffee
             </button>
           </Col>
