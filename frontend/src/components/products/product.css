@@ -2,6 +2,7 @@
   background: #141124;
   border-radius: 10px;
   cursor: pointer;
+  animation: animate 1s ease-in;
 }
 .single-product:hover {
   box-shadow: 5px 5px 10px 5px #f5b70a;
@@ -37,4 +38,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }

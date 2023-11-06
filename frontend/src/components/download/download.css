@@ -41,3 +41,35 @@
 .btn-google:hover a {
   color: #0a071a;
 }
+
+@media only screen and (max-width: 992px) {
+  .app-img img {
+    width: 100%;
+  }
+  .app-content h5 {
+    font-size: 1rem;
+  }
+  .app-content h2 {
+    font-size: 1.5rem;
+  }
+  .app-content p {
+    font-size: 0.7rem;
+    line-height: 25px;
+  }
+  .btn-apple,
+  .btn-google {
+    padding: 5px 20px;
+    font-size: 0.8rem;
+  }
+  .app-content {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and(max-width:768px) {
+  .app-img {
+    margin-bottom: 0px;
+  }
+  .app-content {
+    padding: 30px;
+  }
+}

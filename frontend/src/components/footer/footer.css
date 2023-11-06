@@ -1,0 +1,43 @@
+.footer {
+  padding-bottom: 0;
+}
+.footer-link-title {
+  color: #fff;
+}
+.link-item {
+  padding-left: 0;
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.link-item a {
+  color: #fff;
+}
+.footer-bottom {
+  background: #141124;
+  padding: 30px 0px;
+  text-align: center;
+  margin-top: 50px;
+}
+.footer-bottom p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+@media only screen and (max-width) {
+  .link-item a {
+    font-size: 0.8rem;
+  }
+  .link-item {
+    font-size: 0.8rem;
+  }
+  .logo p {
+    font-size: 0.8 rem;
+  }
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+  .footer-bottom {
+    padding: 15px 0px;
+  }
+}

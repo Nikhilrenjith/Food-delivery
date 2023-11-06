@@ -39,7 +39,7 @@ const Header = () => {
               <span>
                 <i class="ri-restaurant-2-line"></i>
               </span>
-              PizZa Time
+              Pizza Guy
             </h2>
           </div>
           <div className="nav-menu" ref={menuRef}>

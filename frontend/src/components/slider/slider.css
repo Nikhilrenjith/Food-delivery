@@ -9,3 +9,15 @@
 .btn:hover {
   color: #f76e11;
 }
+@media only screen and (max-width: 992px) {
+  .slider-content h2 {
+    font-size: 1.4rem;
+  }
+  .slider-content p {
+    font-size: 0.8rem;
+  }
+  .slider-content .btn {
+    padding: 5px 20px;
+    font-size: 0.7rem;
+  }
+}

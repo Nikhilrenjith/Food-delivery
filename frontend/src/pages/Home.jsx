@@ -7,6 +7,7 @@ import Menu from "../components/menu/Menu";
 import Choose from "../components/choose/Choose";
 import Review from "../components/review/Review";
 import Download from "../components/download/Download";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <AllMenu />
       <Review />
       <Download />
+      <Footer />
     </Fragment>
   );
 };
